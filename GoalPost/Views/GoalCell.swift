@@ -18,9 +18,11 @@ class GoalCell: UITableViewCell {
         // Initialization code
     }
     
-    func confirgureCell()
+    func confirgureCell(description: String, type: String, duration: Int)
     {
-        
+        goalDescription.text = description
+        goalType.text = type
+        goalDayCounter.text = String(duration)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
